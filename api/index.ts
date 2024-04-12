@@ -21,8 +21,8 @@ app.get("/get", (req: Request, res: Response) => {
     sampleData
   )
 })
-app.listen(config.server.port, () => {
-  return console.log(`[server]: Server is running on ${config.server.port}`);
+app.listen(port, () => {
+  return console.log(`[server]: Server is running on ${port}`);
 })
 
 module.exports = app;
